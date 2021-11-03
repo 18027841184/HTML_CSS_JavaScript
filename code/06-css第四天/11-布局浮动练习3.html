@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动布局练习3-手机模块</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #ccc;
+        }
+
+        .box {
+            width: 1226px;
+            height: 615px;
+            margin: 0 auto;
+        }
+
+        .left {
+            width: 234px;
+            height: 615px;
+            background-color: purple;
+            float: left;
+            /* margin-right: 16px; */
+        }
+
+        .right {
+            float: left;
+            background-color: skyblue;
+            width: 992px;
+            height: 615px;
+        }
+
+        .left img {
+            width: 100%;
+            height: 615px;
+        }
+
+        .right>div {
+            float: left;
+            width: 234px;
+            height: 300px;
+            margin-left: 14px;
+            background-color: pink;
+            margin-bottom: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="left"><img src="手机1.jpg" alt=""></div>
+        <div class="right">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+    </div>
+</body>
+
+</html>

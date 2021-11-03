@@ -1,0 +1,431 @@
+/* 引入字体图标 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?tomleg');
+    src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+        url('../fonts/icomoon.woff?tomleg') format('woff'),
+        url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* 4.首页的main模块 */
+.main {
+    width: 980px;
+    height: 455px;
+    margin-top: 10px;
+    margin-left: 220px;
+}
+
+/* main模块的 focus轮播图模块 */
+.focus {
+    position: relative;
+    float: left;
+    width: 721px;
+    height: 455px;
+}
+
+.focus .tupian li img {
+    width: 100%;
+}
+
+.focus a {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    width: 20px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, .3);
+    font-family: 'icomoon';
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+.focus .prev {
+    left: 0;
+    border-radius: 0 15px 15px 0;
+}
+
+.focus .next {
+    right: 0;
+    border-radius: 15px 0 0 15px;
+}
+
+.focus .pro_nav {
+    position: absolute;
+    left: 8%;
+    bottom: 5px;
+    width: 100px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.focus .pro_nav li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    margin: 5px 6px 5px 0;
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 50%;
+}
+
+.focus .pro_nav li:nth-child(2) {
+    background-color: #fff;
+}
+
+/* main模块的  快报模块 */
+.newflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+
+.news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+
+.news_hd {
+    height: 33px;
+    padding: 0 15px;
+    border-bottom: 1px dotted #e4e4e4;
+    font-size: 14px;
+    line-height: 33px;
+}
+
+.news_hd h5 {
+    float: left;
+    font-weight: 400;
+}
+
+.news_hd .more {
+    float: right;
+}
+
+.news_hd .more::after {
+    font-family: 'icomoon';
+    content: '\e920';
+}
+
+.news_bd ul {
+    padding: 5px 15px 0;
+}
+
+.news_bd ul li {
+    height: 24px;
+    line-height: 24px;
+    /* 单行文本溢出  用省略号显示 */
+    /* 1.强制文本在一行内显示 （white-space的默认值为normal）*/
+    white-space: nowrap;
+    /* 2.溢出部分隐藏起来 */
+    overflow: hidden;
+    /* 3.文字溢出的用省略号显示 */
+    text-overflow: ellipsis;
+}
+
+.lifeservice {
+    overflow: hidden;
+    height: 209px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+}
+
+.lifeservice ul {
+    width: 252px;
+}
+
+.lifeservice ul li {
+    position: relative;
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+
+}
+
+.lifeservice ul li:nth-child(2) em {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 15px;
+    background-color: #589d5a;
+    color: #fff;
+    font-size: 10px;
+    line-height: 10px;
+}
+
+.lifeservice ul li:nth-child(2) em .triangle {
+    position: absolute;
+    bottom: 0px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-bottom-color: #fff;
+}
+
+.lifeservice ul li i {
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+
+}
+
+.lifeservice ul li:nth-child(1) i {
+    background: url(../images/icons.png) no-repeat -17px -12px;
+}
+
+.lifeservice ul li:nth-child(2) i {
+    background: url(../images/icons.png) no-repeat -79px -12px;
+}
+
+.lifeservice ul li:nth-child(3) i {
+    background: url(../images/icons.png) no-repeat -142px -12px;
+}
+
+.lifeservice ul li:nth-child(4) i {
+    background: url(../images/icons.png) no-repeat -206px -12px;
+}
+
+.lifeservice ul li:nth-child(5) i {
+    background: url(../images/icons.png) no-repeat -17px -82px;
+}
+
+.lifeservice ul li:nth-child(6) i {
+    background: url(../images/icons.png) no-repeat -79px -83px;
+}
+
+.lifeservice ul li:nth-child(7) i {
+    background: url(../images/icons.png) no-repeat -142px -82px;
+}
+
+.lifeservice ul li:nth-child(8) i {
+    background: url(../images/icons.png) no-repeat -206px -82px;
+}
+
+.lifeservice ul li:nth-child(9) i {
+    background: url(../images/icons.png) no-repeat -17px -152px;
+}
+
+.lifeservice ul li:nth-child(10) i {
+    background: url(../images/icons.png) no-repeat -79px -155px;
+}
+
+.lifeservice ul li:nth-child(11) i {
+    background: url(../images/icons.png) no-repeat -142px -150px;
+}
+
+.lifeservice ul li:nth-child(12) i {
+    background: url(../images/icons.png) no-repeat -206px -154px;
+}
+
+
+.bargain {
+    margin-top: 5px;
+}
+
+/* 5.今日推荐recom模块 */
+.recom {
+    height: 163px;
+    background-color: #ebebeb;
+    margin-top: 12px;
+}
+
+.recom_hd {
+    float: left;
+    height: 163px;
+    width: 205px;
+    padding-top: 30px;
+    background-color: #5c5251;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.recom_bd {
+    float: left;
+}
+
+.recom_bd ul li {
+    position: relative;
+    float: left;
+}
+
+.recom_bd ul li img {
+    width: 248px;
+    height: 163px;
+}
+
+.recom_bd ul li:nth-child(-n+3):after {
+    /* 伪元素必须有content */
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+}
+
+
+/* 6.猜你喜欢模块 */
+.like {
+    height: 266px;
+    /* background-color: pink; */
+    margin-top: 25px;
+}
+
+.like_hd {
+    padding-right: 20px;
+    height: 28px;
+    line-height: 28px;
+}
+
+.like_hd h5 {
+    float: left;
+    font-size: 18px;
+    color: #333;
+    font-weight: 400;
+}
+
+.like_hd p {
+    float: right;
+}
+
+.like_hd p::after {
+    font-family: 'icomoon';
+    content: '\ea2e';
+    padding-left: 5px;
+}
+
+.like_bd {
+    width: 1202px;
+    height: 233px;
+    margin-top: 5px;
+    border: 1px solid #ededed;
+}
+
+.like_bd ul li {
+    position: relative;
+    float: left;
+    height: 231px;
+    width: 200px;
+}
+
+.like_bd ul li::after {
+    position: absolute;
+    right: -1px;
+    bottom: 5px;
+    content: '';
+    width: 1px;
+    height: 62px;
+    background-color: #ededed;
+}
+
+.like_bd ul li img {
+    width: 200px;
+    height: 145px;
+}
+
+.like_bd ul li p {
+    padding: 0 40px 0 35px;
+    margin-top: 10px;
+    line-height: 22px;
+}
+
+.like_bd ul li span {
+    padding-left: 35px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #df3033;
+}
+
+.like_bd ul li span i {
+    font-size: 14px;
+}
+
+/* 7.楼层区floor模块 */
+.floor .w {
+    margin-top: 30px;
+}
+
+/* 7.1家用电器模块 */
+.box_hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.box_hd h3 {
+    float: left;
+    font-weight: 400;
+    font-size: 18px;
+    color: #c81623;
+}
+
+.box_hd .tab_list {
+    float: right;
+    line-height: 30px;
+}
+
+.box_hd .tab_list ul li {
+    float: left;
+}
+
+.box_hd .tab_list ul li a {
+    padding: 0 15px;
+}
+
+.box_bd {
+    height: 361px;
+}
+
+.tab_list_item>div {
+    float: left;
+    height: 361px;
+}
+
+.col_210 {
+    width: 210px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.col_210 ul {
+    padding-left: 12px;
+}
+
+.col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    margin-right: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 34px;
+}
+
+.col_329 {
+    width: 329px;
+}
+
+.col_221 {
+    width: 221px;
+    border-right: 1px solid #ccc;
+}
+
+.col_219 {
+    width: 219px;
+}
+
+.bb {
+    /* 一般情况，a包含有宽度的盒子，需转换块级元素 */
+    display: block;
+    border-bottom: 1px solid #ccc;
+}

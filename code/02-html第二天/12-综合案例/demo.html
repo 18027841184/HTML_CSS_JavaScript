@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格、列表、表单综合案例</title>
+</head>
+<body>
+    <h3>青春不常在，抓紧谈恋爱</h3>
+    <table width="600" >
+        <tr>
+            <!-- 第一行 -->
+            <td>性别:</td>
+            <td>
+                <input type="radio" name="sex" id="nan" checked="checked"> <label for="nan"> <img src="images/man.jpg"> 男 </label>
+                <input type="radio" name="sex" id="nv"> <label for="nv"> <img src="images/women.jpg"> 女 </label>      
+            </td>
+        </tr>
+        <tr>
+            <!-- 第二行 -->
+            <td>生日:</td>
+            <td>
+                <select>
+                    <option selected="selected">--请选择年--</option>
+                    <option>2020年</option> <option>2019年</option> <option>2018年</option>
+                    <option>2017年</option> <option>2016年</option> <option>2015年</option>
+                    <option>2014年</option> <option>2013年</option> <option>2012年</option>
+                    <option>2011年</option> <option>2010年</option> <option>2009年</option>
+                    <option>2008年</option> <option>2007年</option> <option>2006年</option>
+                    <option>2005年</option> <option>2004年</option> <option>2003年</option>
+                    <option>2002年</option> <option>2001年</option> <option>2000年</option>
+                </select>&nbsp;
+                <select>
+                    <option selected="selected">--请选择月--</option>
+                    <option>1月</option> <option>2月</option> <option>3月</option>
+                    <option>4月</option> <option>5月</option> <option>6月</option>
+                    <option>7月</option> <option>8月</option> <option>9月</option>
+                    <option>10月</option> <option>11月</option> <option>12月</option>
+                </select>&nbsp;
+                <select>
+                    <option selected="selected">--请选择日--</option>
+                    <option>1日</option> <option>2日</option> <option>3日</option>
+                    <option>4日</option> <option>5日</option> <option>6日</option>
+                    <option>7日</option> <option>8日</option> <option>9日</option>
+                    <option>10日</option> <option>11日</option> <option>12日</option>
+                    <option>13日</option> <option>14日</option> <option>15日</option>
+                    <option>16日</option> <option>17日</option> <option>18日</option>
+                    <option>19日</option> <option>20日</option> <option>21日</option>
+                    <option>22日</option> <option>23日</option> <option>24日</option>
+                    <option>25日</option> <option>26日</option> <option>27日</option>
+                    <option>28日</option> <option>29日</option> <option>30日</option> <option>31日</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <!-- 第三行 -->
+            <td>所在地区：</td>
+            <td>
+                <input type="text" value="北京思密达">
+            </td>
+        </tr>
+        <tr>
+            <!-- 第四行 -->
+            <td>婚姻状况：</td>
+            <td>
+                <input type="radio" name="marry" id="weihun" checked="checked"> <label for="weihun"> 未婚 </label>
+                <input type="radio" name="marry" id="yihun"> <label for="yihun"> 已婚 </label>
+                <input type="radio" name="marry" id="lihun"> <label for="lihun"> 离婚 </label>
+            </td>
+        </tr>
+        <tr>
+            <!-- 第五行 -->
+            <td>学历：</td>   
+            <td>
+                <input type="text" value="博士后">
+            </td>
+        </tr>
+        <tr>
+            <!-- 第六行 -->
+            <td>喜欢的类型：</td>
+            <td>
+                <input type="checkbox" name="standard" id="fumei"> <label for="fumei">妩媚的 </label>
+                <input type="checkbox" name="standard" id="keai"> <label for="keai">可爱的 </label>
+                <input type="checkbox" name="standard" id="xianrou"> <label for="xianrou">小鲜肉 </label>
+                <input type="checkbox" name="standard" id="larou"> <label for="larou">老腊肉 </label>
+                <input type="checkbox" name="standard" id="douke" checked="checked"> <label for="douke">都喜欢 </label>
+            </td>
+        </tr>
+        <tr>
+            <!-- 第七行 -->
+            <td>自我介绍：</td>
+            <td>
+                <textarea>个人简介</textarea>
+            </td>
+        </tr>
+        <tr>
+            <!-- 第八行 -->
+            <td></td>
+            <td>
+                <input type="submit" value="免费注册">
+            </td>
+        </tr>
+        <tr>
+            <!-- 第九行 -->
+            <td></td>
+            <td>
+                <input type="checkbox" id="tongyi" checked="checked"> <label for="tongyi"> 我同意注册条款和会员加入标准</label>
+            </td>
+        </tr>
+        <tr>
+            <!-- 第十行 -->
+            <td></td>
+            <td>
+                <a href="http://www.baidu.com" target="_blank">我是会员,立即登录</a>
+            </td>
+        </tr>
+        <tr>
+            <!-- 第十一行 -->
+            <td></td>
+            <td>
+                <h4>我承诺</h4>
+                <ul>
+                    <li>年满18岁，单身1</li>
+                    <li>抱着严肃的态度</li>
+                    <li>真诚寻找另一半</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片底侧空白缝隙解决方案</title>
+    <style>
+        div {
+            border: 2px solid red;
+        }
+
+        img {
+            /* 1、不是基线对齐，就能去掉下面的空白缝隙 */
+            vertical-align: middle;
+            /* 2、把图片转换为块级元素 */
+            /* display: block; */
+        }
+    </style>
+</head>
+
+<body>
+    <div><img src="images/ldh.jpg" alt=""></div>
+</body>
+
+</html>

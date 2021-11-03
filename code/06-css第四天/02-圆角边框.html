@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圆角边框</title>
+    <style>
+        .one {
+            width: 300px;
+            height: 150px;
+            background-color: pink;
+            border-radius: 10px;
+        }
+        
+        .yuanxing {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* border-radius: 100px;  用50%相当于100px，不需要自己计算*/
+            border-radius: 50%;
+        }
+        
+        .juxing {
+            width: 200px;
+            height: 50px;
+            background-color: pink;
+            /* 圆角矩形，半径设置为高度的一般 */
+            border-radius: 25px;
+        }
+        
+        .radius {
+            margin-top: 20px;
+            width: 200px;
+            height: 200px;
+            /* border-radius: 10px 20px 30px 40px; */
+            /* border-radius: 10px 40px; */
+            /* border-radius: 10px 20px 30px; */
+            border-top-left-radius: 20px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one"></div>
+    <div class="yuanxing"></div>
+    <div class="juxing"></div>
+    <div class="radius"></div>
+</body>
+
+</html>

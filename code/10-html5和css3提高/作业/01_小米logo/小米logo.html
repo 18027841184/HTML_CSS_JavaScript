@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作业1-小米logo</title>
+    <style>
+        .box {
+            position: relative;
+            width: 49px;
+            height: 49px;
+            margin: 100px auto;
+            background-color: orange;
+            border: 1px solid red;
+        }
+
+        .zhaopian {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 98px;
+            height: 100%;
+            transition: left 1s;
+        }
+
+        .box:hover .zhaopian {
+            left: -49px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="zhaopian"><img src="images/mi-logo.png" alt=""><img src="images/mi-home.png" alt=""></div>
+    </div>
+</body>
+
+</html>

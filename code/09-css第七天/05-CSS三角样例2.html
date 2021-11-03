@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS三角案例2-右侧三角</title>
+    <style>
+        .xiaomi {
+            position: relative;
+            width: 250px;
+            height: 250px;
+            background-color: pink;
+        }
+
+        .xiaomi span {
+            position: absolute;
+            top: 25px;
+            /* 自身边宽的两倍 */
+            right: -10px;
+            width: 0;
+            height: 0;
+            line-height: 0;
+            font-size: 0;
+            border: 5px solid transparent;
+            border-left-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="xiaomi">
+        <span></span>
+    </div>
+</body>
+
+</html>

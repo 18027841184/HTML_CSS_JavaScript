@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动特性-浮动元素具有行内块特性</title>
+    <style>
+        /* 若行内元素有了浮动，则不需要转换为块级/行内块元素  就可以直接给高度和宽度 */
+        span,
+        div {
+            background-color: pink;
+            width: 200px;
+            height: 200px;
+            float: left;
+        }
+
+        p {
+            height: 200px;
+            background-color: purple;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <span>1</span>
+    <span>2</span>
+    <div>div</div>
+    <p>ppppp</p>
+</body>
+
+</html>

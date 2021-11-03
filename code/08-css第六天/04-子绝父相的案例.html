@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子绝父相案例</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            background-color: #f3f5f7;
+        }
+
+        ul {
+            width: 228px;
+            height: 270px;
+            margin: 50px auto;
+        }
+
+        ul li {
+            position: relative;
+            width: 228px;
+            height: 270px;
+            background-color: #fff;
+        }
+
+        ul li:hover {
+            box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, .2);
+        }
+
+        ul li a em {
+            position: absolute;
+            right: -4px;
+            top: 4px;
+        }
+
+        ul li a>img {
+            width: 100%;
+        }
+
+        ul li h4 {
+            margin: 20px 20px 20px 25px;
+            font-size: 14px;
+            color: #050505;
+            font-weight: 400;
+        }
+
+        .info {
+            margin: 0 20px 0 25px;
+            font-size: 12px;
+            color: #999;
+        }
+
+        .info span {
+            color: #ff7c2d;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <a href="#">
+                <em><img src="img/hot.png" alt=""></em>
+                <img src="img/pic.png" alt="">
+                <h4>Think PHP 5.0 博客系统实战项目演练</h4>
+                <div class="info"><span>高级</span> • 1125人在学习</div>
+            </a>
+        </li>
+    </ul>
+</body>
+
+</html>

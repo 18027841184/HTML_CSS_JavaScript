@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品列表布局</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 310px;
+            height: 476px;
+            margin: auto;
+        }
+
+        .zhaopian {
+            width: 100%;
+            height: 300px;
+            margin: 0 15px;
+        }
+
+        .zhaopian img {
+            /* height: 100%; */
+        }
+
+
+
+        .jianjie {
+            width: 100%;
+            height: 40px;
+            margin-top: 10px;
+            padding: 0 20px;
+            font-size: 14px;
+            color: gray;
+        }
+
+        .jiange {
+            width: 100%;
+            height: 25px;
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+
+        .jiange .miaosha {
+            font-size: 22px;
+            color: red;
+        }
+
+        .jiange .yuanjia {
+            font-size: 14px;
+            color: gray;
+            text-decoration: line-through;
+            font-weight: 700;
+        }
+
+        .xiaoshou {
+            width: 100%;
+            height: 18px;
+            margin-top: 8px;
+            padding: 0 20px;
+        }
+
+        .xiaoshou span {
+            font-size: 12px;
+            color: gray;
+        }
+
+        .bar {
+            display: inline-block;
+            width: 132px;
+            height: 14px;
+            border-radius: 7px;
+            border: 1px solid red;
+        }
+
+        .bar_in {
+            width: 80%;
+            height: 100%;
+            background-color: red;
+            border-radius: 7px 0 0 7px;
+            transition: all 1s;
+        }
+
+        .bar:hover .bar_in {
+            width: 100%;
+            border-radius: 7px;
+        }
+
+        .qianggou {
+            width: 290px;
+            height: 45px;
+            margin: 7px 10px 0 10px;
+            background-color: red;
+            color: #fff;
+            text-align: center;
+            line-height: 45px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="zhaopian"><img src="images/mobile.jpg" alt=""></div>
+        <div class="jianjie">Apple苹果iphone 6s Plus（A1699）32G 金色 移动联通电信4G手机</div>
+        <div class="jiange">
+            <span class="miaosha">￥6088</span>
+            <span class="yuanjia">￥6988</span>
+        </div>
+        <div class="xiaoshou">
+            <span class="text1">已售</span>
+            <span class="text2">87%</span>
+            <div class="bar">
+                <div class="bar_in"></div>
+            </div>
+            <span class="text3">剩余</span>
+            <span class="text4">29</span>
+            <span class="text5">件</span>
+        </div>
+        <div class="qianggou">立即抢购</div>
+    </div>
+</body>
+
+</html>
