@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>双重for循环</title>
+    <script>
+        var str1 = '';
+        for (var i = 1; i <= 5; i++) {
+            for (var j = 1; j <= 5; j++) {
+                str1 += '☆';
+            }
+            str1 += '\n';
+        }
+        alert(str1);
+
+        //倒三角
+        var str2 = '';
+        for (var i = 1; i <= 10; i++) {
+            for (var j = i; j <= 10; j++) {
+                str2 += '☆';
+            }
+            str2 += '\n';
+        }
+        alert(str2);
+
+        //正三角
+        var str3 = '';
+        for (var i = 1; i <= 10; i++) {
+            for (var j = 1; j <= i; j++) {
+                str3 += '☆';
+            }
+            str3 += '\n';
+        }
+        alert(str3);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

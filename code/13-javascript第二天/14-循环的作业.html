@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>循环的作业</title>
+    <script>
+        var str1 = 'admin',
+            str2 = '123456';
+        var ret1 = '',
+            ret2 = '';
+        while (str1 != ret1 || str2 != ret2) {
+            ret1 = prompt('请输入用户名：');
+            ret2 = prompt('请输入密码：');
+        }
+        alert('登录成功');
+
+        var ret = 0;
+        for (var i = 1; i <= 100; i++) {
+            if (i == 3 || i > 10 && i % 10 == 3) {
+                continue;
+            }
+            ret += i;
+        }
+        alert(ret);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

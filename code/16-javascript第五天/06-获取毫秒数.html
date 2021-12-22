@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>获取毫秒数</title>
+    <script>
+        // 1.用valueOf() 或者 getTime()方法
+        var date1 = new Date();
+        console.log(date1.valueOf());
+        console.log(date1.getTime());
+        // 2.用+new 获取时间(实际开发最常用)
+        var date2 = +new Date();
+        console.log(date2);
+        // 3.用now()方法，低版本浏览器不兼容
+        // H5新增
+        var date3 = Date.now();
+        console.log(date3);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

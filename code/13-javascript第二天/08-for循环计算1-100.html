@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for循环计算</title>
+    <script>
+        var ret1 = 0;
+        for (var i = 1; i <= 100; i++) {
+            ret1 += i;
+        }
+        alert(ret1);
+        alert('平均值为:' + ret1 / 100);
+
+        var ret2 = 0,
+            ret3 = 0;
+        for (var i = 1; i <= 100; i++) {
+            if (i % 2 == 0) {
+                ret2 += i;
+            } else {
+                ret3 += i;
+            }
+        }
+        alert('所有偶数的合为：' + ret2);
+        alert('所有奇数的合为：' + ret3);
+
+        var ret4 = 0;
+        for (var i = 0; i <= 100; i++) {
+            if (i % 3 == 0) {
+                ret4 += i;
+            }
+        }
+        alert('能被3整除的合：' + ret4);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

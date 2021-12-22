@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简易ATM</title>
+    <script>
+        var i = 0;
+        var money = 100;
+        var temp = 0;
+        while (i != 4) {
+            i = prompt('请输入你要进行的操作：\n1.存钱\n2.取钱\n3.显示余额\n4.退出');
+            switch (parseInt(i)) {
+                case 1:
+                    {
+                        temp = prompt('请输入要存入多少钱：');
+                        money += parseInt(temp);
+                        alert('现有余额为：' + money);
+                        break;
+                    }
+
+                case 2:
+                    {
+                        temp = prompt('请输入要取出多少钱：');
+                        money -= parseInt(temp);
+                        alert('现有余额为：' + money);
+                        break;
+                    }
+
+                case 3:
+                    {
+                        alert('现有余额为：' + money);
+                        break;
+                    }
+                case 4:
+                    alert('即将退出！');
+                    break;
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

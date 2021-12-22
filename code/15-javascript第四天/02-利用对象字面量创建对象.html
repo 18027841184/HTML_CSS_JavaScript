@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>利用对象字面量创建对象</title>
+    <script>
+        var obj = {
+                uname: 'Bryant',
+                age: 18,
+                sex: '男',
+                sayHi: function() {
+                    console.log('hi~');
+                }
+            }
+            // 1.通过.访问属性
+        console.log(obj.uname);
+        // 函数的调用，记得别忘了添加小括号
+        obj.sayHi();
+        // 2.通过['属性名']访问
+        console.log(obj['age']);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

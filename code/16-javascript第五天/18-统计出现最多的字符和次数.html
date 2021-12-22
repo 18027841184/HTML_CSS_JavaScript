@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>统计出现最多的字符和次数</title>
+    <script>
+        //判断一个字符串 'abcoefoxyozzopp' 中出现次数最多的字符，并统计其次数
+        var str = 'abcoefoxyozzopp';
+        var obj = new Object();
+        for (var i = 0; i < str.length; i++) {
+            var chars = str[i];
+            if (obj[chars]) {
+                obj[chars]++;
+            } else {
+                obj[chars] = 1;
+            }
+        }
+        // 遍历对象
+        var max = 0;
+        var ch = '';
+        for (var k in obj) {
+            //k是属性名，obj[k]是属性值
+            if (obj[k] > max) {
+                max = obj[k];
+                ch = k;
+            }
+        }
+        console.log('出现次数最多的字符是' + ch + '，出现次数为：' + max);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

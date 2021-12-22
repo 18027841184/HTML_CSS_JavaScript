@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>对象的作业3</title>
+    <script>
+        var car = new Object();
+        car.weight = '500Kg';
+        car.color = 'pink';
+        car.logo = 'BYD';
+        car.bh1 = function() {
+            console.log('载人');
+        }
+        car.bh2 = function() {
+            console.log('拉货');
+        }
+        car.bh3 = function() {
+            console.log('耕田');
+        }
+        console.log(car.weight + '\t' + car.color + '\t' + car.logo);
+        car.bh1();
+        car.bh2();
+        car.bh3();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数组的其余方法</title>
+    <script>
+        // 1.concat() 合并两个或多个数组
+        // 语法：var new_array = old_array.concat(); 
+        // 若没传参，返回一个浅拷贝对象
+        var arr1 = [1, 2, 3];
+        var arr2 = [4, 5, 6];
+        var arr3 = arr1.concat(arr2);
+        console.log(arr3);
+        console.log(arr3.concat(arr1, arr2));
+
+        // 2.slice() 数组截取 [begin,end) begin、end为索引 
+        var arr4 = arr3.slice(0, 5)
+        console.log(arr4);
+
+        // 3.splice() 数组删除(第几个开始，删除的个数)
+        var arr5 = arr3.splice(2, 2); //第2位开始，删除2个元素
+        console.log(arr3); //影响原数组
+        console.log(arr5); //返回值是由删除的元素组成的新数组
+        //还可用于插入元素
+        arr3.splice(2, 0, 3, 4); //索引2位置删除0个元素，再添加3和4
+        console.log(arr3);
+        //注：可同时用于删除和插入
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

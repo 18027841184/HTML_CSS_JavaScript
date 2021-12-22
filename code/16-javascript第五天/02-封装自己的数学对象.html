@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>封装自己的数学对象</title>
+    <script>
+        var myMath = {
+            pI: 3.14159,
+            Max: function() {
+                var max = arguments[0];
+                for (var i = 1; i < arguments.length; i++) {
+                    if (arguments[i] > max) {
+                        max = arguments[i];
+                    }
+                }
+                return max;
+            },
+            Min: function() {
+                var min = arguments[0];
+                for (var i = 1; i < arguments.length; i++) {
+                    if (arguments[i] < min) {
+                        min = arguments[i];
+                    }
+                }
+                return min;
+            }
+        }
+        console.log(myMath.pI);
+        console.log(myMath.Max(1, 5, 7, 9));
+        console.log(myMath.Min(1, 5, 7, 9));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

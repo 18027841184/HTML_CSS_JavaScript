@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for循环案例2</title>
+    <script>
+        var sum = 0; //存储总成绩
+        var temp = 0; //临时存储每个学生的成绩
+        var nums = prompt('请输入班级学生个数：');
+
+        for (var i = 1; i <= nums; i++) {
+            temp = prompt('请输入第' + i + '个学生的成绩：');
+            sum += parseInt(temp);
+        }
+        alert('该班级总成绩为:' + sum);
+        alert('该班级学生平均成绩为：' + sum / nums);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

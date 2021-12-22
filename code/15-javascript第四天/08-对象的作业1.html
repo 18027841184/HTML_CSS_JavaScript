@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>对象的作业1</title>
+    <script>
+        function Computer(color, weight, logo, type) {
+            this.color = color;
+            this.weight = weight;
+            this.logo = logo;
+            this.type = type;
+            this.watch = function(film) {
+                console.log(film);
+            };
+            this.listen = function(song) {
+                console.log(song);
+            }
+        }
+        var com = new Computer('black', '1.5kg', 'ASUS', 'A1001');
+        console.log(com.color + '\t' + com.weight + '\t' + com.logo + '\t' + com.type);
+        com.watch('看电影');
+        com.listen('听歌');
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

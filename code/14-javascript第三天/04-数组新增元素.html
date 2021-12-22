@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数组新增元素</title>
+    <script>
+        // 1.通过修改 length 长度新增数组元素
+        var arr1 = ['red', 'green', 'pink'];
+        arr1.length = 5;
+        console.log(arr1);
+        console.log(arr1[3]);
+        console.log(arr1[4]);
+
+        // 2.修改数组索引新增数组元素
+        var arr2 = ['red', 'green', 'blue', 'pink'];
+        arr2[4] = 'hotpink';
+        console.log(arr2);
+
+        //课堂案例1
+        var arr3 = [];
+        for (var i = 0; i < 10; i++) {
+            arr3[i] = i + 1;
+        }
+        console.log(arr3);
+
+        //课堂案例2
+        var arr4_1 = [2, 0, 6, 1, 77, 0, 52, 0, 25, 7];
+        var arr4_2 = [];
+        var j = 0;
+        for (var i = 0; i < arr4_1.length; i++) {
+            if (arr4_1[i] >= 10) {
+                arr4_2[j] = arr4_1[i];
+                j++;
+            }
+        }
+        console.log(arr4_2);
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

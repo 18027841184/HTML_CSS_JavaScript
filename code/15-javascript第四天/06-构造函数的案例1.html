@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>构造函数的案例1</title>
+    <script>
+        function Hero(uname, type, blood) {
+            this.name = uname;
+            this.type = type;
+            this.blood = blood;
+            this.attack = function(attack) {
+                console.log(lp.name + '的攻击方式：' + attack);
+            }
+        }
+        var lp = new Hero('廉颇', '力量型', 500);
+        console.log(lp.name + '\t' + lp.type + '\t' + lp.blood);
+        lp.attack('近战');
+
+        var hy = new Hero('后裔', '射手型', 100);
+        console.log(hy.name + '\t' + hy.type + '\t' + hy.blood);
+        hy.attack('远程');
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

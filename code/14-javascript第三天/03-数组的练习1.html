@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数组的练习1</title>
+    <script>
+        var arr1 = [2, 6, 1, 7, 4];
+        var sum = 0;
+        for (var i = 0; i < arr1.length; i++) {
+            sum += arr1[i];
+        }
+        console.log('全部元素的和为：' + sum);
+        console.log('全部元素的平均值为：' + sum / arr1.length);
+
+        var arr2 = [2, 6, 1, 77, 52, 25, 7];
+        var ret = arr2[0];
+        for (var i = 1; i < arr2.length; i++) {
+            if (arr2[i] > ret) {
+                ret = arr2[i];
+            }
+        }
+        console.log('数组元素的最大值为：' + ret);
+
+        var arr3 = ['red', 'green', 'blue', 'pink'];
+        var str3 = '';
+        for (var i = 0; i < arr3.length; i++) {
+            str3 += arr3[i];
+        }
+        console.log(str3);
+
+        var arr4 = ['red', 'green', 'blue', 'pink'];
+        var str4 = '';
+        var separator4 = '|'
+        for (var i = 0; i < arr4.length; i++) {
+            str4 += arr4[i] + separator4;
+        }
+        console.log(str4);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

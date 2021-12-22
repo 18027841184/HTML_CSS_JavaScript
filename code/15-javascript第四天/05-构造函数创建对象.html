@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>构造函数创建对象</title>
+    <script>
+        // 构造函数
+        function Star(uname, age, sex) {
+            this.name = uname;
+            this.age = age;
+            this.sex = sex;
+            this.sing = function(sang) {
+                console.log(sang);
+            }
+        }
+        //调用构造函数，返回对象
+        var ldh = new Star('刘德华', 40, '男');
+        console.log(typeof ldh);
+        console.log(ldh.name);
+        console.log(ldh['age']);
+        ldh.sing('冰雨');
+        var zxy = new Star('张学友', 19, '男');
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

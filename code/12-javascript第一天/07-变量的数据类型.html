@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>变量的数据类型</title>
+    <script>
+        //JS的变量数据类型，是在程序运行时，根据等号右边的值确定的
+        var num = 10;
+        // JS是动态语言，变量数据类型可以变化
+        var x = 10;
+        x = 'pink'; //变为字符串型
+
+        // 直接输入log，即可输出
+        var num1 = 010;
+
+        // 1.八进制前是0
+        console.log(num1); //010是八进制，转换为十进制是8
+        // 2.十六进制前是0x
+        var num2 = 0xa;
+        console.log(num2);
+
+        // 3.js中数字型的最大和最小值
+        alert(Number.MAX_VALUE);
+        alert(Number.MIN_VALUE);
+
+        // 4.Infinity - 无穷大，   -Infinity - 无穷小
+        console.log(Number.MAX_VALUE * 2);
+        console.log(-Number.MAX_VALUE * 2);
+        // 5.NaN - 代表非数值
+        console.log(x - 10);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
