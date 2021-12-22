@@ -30,7 +30,6 @@
 + [<font size=5>5.CSS-part4</font>](./notes/5.CSS-part4.md)
 + [<font size=5>6.HTML5_CSS3</font>](./notes/6.HTML5_CSS3.md)
 + [<font size=5>7.JavaScript-part1</font>](./notes/7.JavaScript-part1.md)
-+ [<font size=5>7.JavaScript-part1</font>](./notes/7.JavaScript-part1.md)
 + [<font size=5>8.JavaScript-part2</font>](./notes/8.JavaScript-part2.md)
 
 
